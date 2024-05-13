@@ -3,12 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FeelContainerComponent } from './feel-container/feel-container.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeelContainerComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
