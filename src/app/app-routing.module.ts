@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {AuthGuard} from "./core/auth/auth.guard";
+import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  {path: '**', redirectTo: '/home'},
+  { path: 'home', component:HomeComponent},
   {
     path: 'auth',
     loadChildren: () =>
@@ -18,6 +20,7 @@ const routes: Routes = [
       import(`./all-modules/candidat/candidat.module`).then(
         (m) => m.CandidatModule
       ),
+    canActivate: [AuthGuard]
 
   },
   {
@@ -26,8 +29,9 @@ const routes: Routes = [
       import(`./all-modules/company/company.module`).then(
         (m) => m.CompanyModule
       ),
-
+    canActivate: [AuthGuard]
   },
+  {path: '**', redirectTo: '/home'},
   /*
   {path: "thanks",component:ThankYouPageComponent},
   { path: 'forgotpassword', component: ForgotpasswordComponent },
