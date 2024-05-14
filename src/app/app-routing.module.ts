@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from "./core/auth/auth.guard";
-import { HomeComponent } from "./home/home.component";
+import { HomeComponent } from './all-modules/home/home.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
