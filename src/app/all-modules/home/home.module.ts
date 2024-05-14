@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeSearchComponent } from './components/home-search/home-search.component';
 import { HomeListComponent } from './components/home-list/home-list.component';
 import { HomeComponent } from './home.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,10 @@ import { HomeComponent } from './home.component';
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
-  ]
+    HomeRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
+  bootstrap: [HomeComponent]
 })
 export class HomeModule { }
