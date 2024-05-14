@@ -17,22 +17,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" routerLink="home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Company</a>
         </li>
       </ul>
-      <div class="d-flex collapse navbar-collapse">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link sign-in-link" href=""> Sign in</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link sign-up-link" href=""> Sign up</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="navbar-nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="auth/signin">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="auth/signup">Sign Up</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
