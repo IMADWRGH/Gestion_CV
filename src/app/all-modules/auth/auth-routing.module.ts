@@ -4,9 +4,9 @@ import {SignInComponent} from "./components/sign-in/sign-in.component";
 import {SignUpComponent} from "./components/sign-up/sign-up.component";
 
 const routes: Routes = [
-  { path: 'login', component: SignInComponent },//, canActivate: [LoginGuard]
-  { path: 'register', component: SignUpComponent},// , canActivate: [LoginGuard]
-  {path: '**', redirectTo: '/login'}
+  { path: 'signin', component: SignInComponent },//, canActivate: [LoginGuard]
+  { path: 'signup', component: SignUpComponent},// , canActivate: [LoginGuard]
+  {path: '**', redirectTo: '/signin'}
 ];
 
 @NgModule({
