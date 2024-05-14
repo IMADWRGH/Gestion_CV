@@ -10,8 +10,8 @@ import {ListCompanyFormComponent} from "./components/list-company-form/list-comp
 const routes: Routes = [
   { path: 'add', component: AddCompanyFormComponent },//, canActivate: [LoginGuard]
   { path: 'update', component: UpdateCompanyFormComponent },//, canActivate: [LoginGuard]
-  { path: 'list', component: ListCompanyFormComponent},// , canActivate: [LoginGuard]
-  {path: '**', redirectTo: '/list'}
+  { path: 'companies', component: ListCompanyFormComponent},// , canActivate: [LoginGuard]
+  {path: '**', redirectTo: '/companies'}
 ];
 
 @NgModule({
