@@ -1,23 +1,14 @@
-<div class="row m-4">
-  <div class="col-md-8 offset-md-2">
-    <form [formGroup]="form" (submit)="onSubmit()">
-      <div class="input-group m-3">
-        <span class="input-group-text"><i class="bi bi-search"></i></span>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Job title, Keywords, or Company"
-          formControlName="searchQuery"
-        />
-        <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="City, state,..."
-          formControlName="location"
-        />
-        <button type="submit" class="btn btn-primary">Search</button>
-      </div>
-    </form>
+<form class="form-control form-control-lg">
+  <div class="input-group m-3">
+    <span class="input-group-text"><i class="bi bi-search"></i></span>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Job title, Keywords, or Company"
+    />
+    <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
+
+    <input type="text" class="form-control" placeholder="City, state, ..." />
+    <button type="button" class="btn btn-primary">Search</button>
   </div>
-</div>
+</form>

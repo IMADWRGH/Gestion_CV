@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from "./core/auth/auth.guard";
-import { HomeComponent } from './all-modules/home/home.component';
-
+import {AuthGuard} from "./core/auth/auth.guard";
+import {HomeComponent} from "./all-modules/home/home.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component:HomeComponent},
   {
     path: 'auth',
     loadChildren: () =>
@@ -32,7 +31,7 @@ const routes: Routes = [
       ),
     canActivate: [AuthGuard]
   },
-  { path: '**', redirectTo: '/home' },
+  {path: '**', redirectTo: '/home'},
   /*
   {path: "thanks",component:ThankYouPageComponent},
   { path: 'forgotpassword', component: ForgotpasswordComponent },
