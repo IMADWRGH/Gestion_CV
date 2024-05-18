@@ -1,0 +1,196 @@
+{
+    "candidats": [
+        {
+            "id": 2,
+            "full_name": "a title",
+            "profile": "Java dev",
+            "password": 100,
+            "email": "a@b.com",
+            "phone": "1234567890",
+            "address": "123 street",
+            "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
+            "profile_picture": "D:/JobInTech-UIR/Imad ASSERNE/profile_picture/Imad.jpg",
+            "save": [],
+            "skills": [
+                {
+                    "id": "1",
+                    "skill_name": "java",
+                    "level": "beginner",
+                    "candidat_id": "1"
+                },
+                {
+                    "id": "2",
+                    "skill_name": "C++",
+                    "level": "beginner",
+                    "candidat_id": "1"
+                },
+                {
+                    "id": "3",
+                    "skill_name": "C",
+                    "level": "beginner",
+                    "candidat_id": "1"
+                }
+            ],
+            "experiences": [
+                {
+                    "id": "1",
+                    "company_name": "INDATACORE",
+                    "job_title": "dev",
+                    "start_date": "2010-01-01",
+                    "end_date": "2015-01-01",
+                    "candidat_id": "1"
+                },
+                {
+                    "id": "2",
+                    "company_name": "JobInTech",
+                    "job_title": "dev",
+                    "start_date": "2010-01-01",
+                    "end_date": "2015-01-01",
+                    "candidat_id": "1"
+                },
+                {
+                    "id": "3",
+                    "company_name": "NTTDATA",
+                    "job_title": "dev",
+                    "start_date": "2010-01-01",
+                    "end_date": "2015-01-01",
+                    "candidat_id": "1"
+                }
+            ],
+            "educations": [
+                {
+                    "id": "1",
+                    "institute_name": "IIT",
+                    "degree": "Btech",
+                    "start_date": "2005-01-01",
+                    "end_date": "2009-01-01",
+                    "candidat_id": "1"
+                },
+                {
+                    "id": "2",
+                    "institute_name": "UIR",
+                    "degree": "Master",
+                    "start_date": "2005-01-01",
+                    "end_date": "2009-01-01",
+                    "candidat_id": "2"
+                }
+            ],
+            "jobs": []
+        },
+        {
+            "id": 2,
+            "full_name": "a title",
+            "password": 100,
+            "email": "a@b.com",
+            "phone": "1234567890",
+            "address": "123 street",
+            "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
+            "skills": [
+                {
+                    "id": "4",
+                    "skill_name": "C#",
+                    "level": "beginner",
+                    "candidat_id": "2"
+                },
+                {
+                    "id": "5",
+                    "skill_name": "X++",
+                    "level": "beginner",
+                    "candidat_id": "2"
+                },
+                {
+                    "id": "6",
+                    "skill_name": "PHP",
+                    "level": "beginner",
+                    "candidat_id": "2"
+                }
+            ],
+            "experience": [
+                {
+                    "id": "4",
+                    "company_name": "UIR",
+                    "job_title": "dev",
+                    "start_date": "2010-01-01",
+                    "end_date": "2015-01-01",
+                    "candidat_id": "2"
+                },
+                {
+                    "id": "5",
+                    "company_name": "SQLI",
+                    "job_title": "dev",
+                    "start_date": "2010-01-01",
+                    "end_date": "2015-01-01",
+                    "candidat_id": "2"
+                },
+                {
+                    "id": "6",
+                    "company_name": "NVM",
+                    "job_title": "dev",
+                    "start_date": "2010-01-01",
+                    "end_date": "2015-01-01",
+                    "candidat_id": "2"
+                }
+            ],
+            "educations": [
+                {
+                    "id": "1",
+                    "institute_name": "IIT",
+                    "degree": "Btech",
+                    "start_date": "2005-01-01",
+                    "end_date": "2009-01-01",
+                    "candidat_id": "1"
+                },
+                {
+                    "id": "2",
+                    "institute_name": "UIR",
+                    "degree": "Master",
+                    "start_date": "2005-01-01",
+                    "end_date": "2009-01-01",
+                    "candidat_id": "2"
+                }
+            ],
+            "jobs": []
+        }
+    ],
+    "companies": [
+        {
+            "id": "1",
+            "company_name": "NVM",
+            "candidat_id": "2"
+        },
+        {
+            "id": "1",
+            "company_name": "UIR",
+            "candidat_id": "1"
+        }
+    ],
+    "Jobs": [
+        {
+            "id": "1",
+            "announce_name": "dev",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "dev",
+            "job_type": "fulltime",
+            "job_category": "dev"
+        },
+        {
+            "id": "1",
+            "announce_name": "dev",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "dev",
+            "job_type": "fulltime",
+            "job_category": "finance"
+        },
+        {
+            "id": "1",
+            "announce_name": "dev",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "dev",
+            "job_type": "fulltime",
+            "job_category": "rh"
+        }
+    ]
+}
