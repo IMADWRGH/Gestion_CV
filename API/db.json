@@ -192,5 +192,21 @@
             "job_type": "fulltime",
             "job_category": "rh"
         }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "user1",
+            "email": "user1@gmail.com",
+            "password": "pwd",
+            "role": "condidat"
+        },
+        {
+            "id": "2",
+            "username": "user2",
+            "email": "user2@gmail.com",
+            "password": "pwd",
+            "role": "RH"
+        }
     ]
 }
