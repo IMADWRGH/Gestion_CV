@@ -2,7 +2,9 @@
     background-color: #e3f2fd;
 }
 
+
 .navbar .logo {
     height: 50px;
-    width: 150px;
+    width: 100px;
+    object-fit: contain;
 }
