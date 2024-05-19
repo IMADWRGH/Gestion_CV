@@ -1,5 +1,9 @@
-<div class="" *ngIf="!jobs || jobs.length === 0">
-  <p>Post your CV - It only takes a few seconds</p>
+<div class="container">
+  <!-- <p class="" *ngIf="!jobs || jobs.length === 0">Find your next job</p> -->
+  <p class="text-center">
+    <a routerLink="/auth/signup" class="text-primary">Post your CV</a> - It only
+    takes a few seconds
+  </p>
 </div>
 <div class="row">
   <div class="col-sm-6" *ngFor="let job of jobs">
