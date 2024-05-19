@@ -15,7 +15,7 @@ export class HomeService {
   }
 
   searchJobs(title?: string, city?: string): Observable<IJob[]> {
-    return this.http.get<IJob[]>(`${this.API_URL}/?announce_name=${title}&job_type=${city}`);
+    return this.http.get<IJob[]>(`${this.API_URL}/?announce_name=${title}&location=${city}`);
   }
 
 }

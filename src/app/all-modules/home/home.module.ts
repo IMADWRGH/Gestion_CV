@@ -7,13 +7,15 @@ import { HomeListComponent } from './components/home-list/home-list.component';
 import { HomeComponent } from './home.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
+import { HomeDetailsComponent } from './components/home-details/home-details.component';
 
 
 @NgModule({
   declarations: [
     HomeSearchComponent,
     HomeListComponent,
-    HomeComponent
+    HomeComponent,
+    HomeDetailsComponent
   ],
   imports: [
     CommonModule,

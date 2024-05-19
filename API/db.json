@@ -167,30 +167,73 @@
     "Jobs": [
         {
             "id": "1",
-            "announce_name": "dev",
+            "announce_name": "Java Developer",
             "company_id": "1",
             "candidat_id": [],
-            "job_description": "dev",
-            "job_type": "fulltime",
-            "job_category": "dev"
-        },
-        {
-            "id": "1",
-            "announce_name": "RH",
-            "company_id": "1",
-            "candidat_id": [],
-            "job_description": "dev",
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
             "job_type": "site",
-            "job_category": "finance"
+            "job_category": "dev",
+            "location": "casa"
         },
         {
             "id": "1",
-            "announce_name": "IT",
+            "announce_name": "Spring boot Developer",
             "company_id": "1",
             "candidat_id": [],
-            "job_description": "dev",
-            "job_type": "hyber",
-            "job_category": "rh"
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
+            "job_type": "hybrid",
+            "job_category": "dev",
+            "location": "casa"
+        },
+        {
+            "id": "1",
+            "announce_name": "JavaScript Developer",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
+            "job_type": "site",
+            "job_category": "dev",
+            "location": "casa"
+        },
+        {
+            "id": "1",
+            "announce_name": "C++ Developer",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
+            "job_type": "hybrid",
+            "job_category": "dev",
+            "location": "casa"
+        },
+        {
+            "id": "1",
+            "announce_name": "C# Developer",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
+            "job_type": "distance",
+            "job_category": "dev",
+            "location": "casa"
+        },
+        {
+            "id": "1",
+            "announce_name": "PHP Developer",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
+            "job_type": "distance",
+            "job_category": "dev",
+            "location": "casa"
+        },
+        {
+            "id": "1",
+            "announce_name": "Java/Spring Developer",
+            "company_id": "1",
+            "candidat_id": [],
+            "job_description": "We are a dynamic Moroccan startup at the forefront of technology innovation cutting-edge application with a focus on delivering exceptional user experiences. Our project encompasses a sophisticated front-end built on Next.js/React.js, a secure and robust Identity and Access Management (IAM) via Keycloak, and backend microservices architected in Java using the Quarkus framework. We are on a mission to revolutionize our industry and are looking for a passionate Backend Developer to join our team and contribute to the development of high-quality backend services.",
+            "job_type": "site",
+            "job_category": "dev",
+            "location": "casa"
         }
     ],
     "users": [

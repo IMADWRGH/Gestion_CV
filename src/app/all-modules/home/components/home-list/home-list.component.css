@@ -1,4 +1,23 @@
+.animate-on-hover {
+    transition: transform 0.3s ease-in-out;
+}
+
 .animate-on-hover:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .title {
+    text-decoration: underline;
+
+}
+
+.btn:hover {
+    background-color: #62c0e6;
+}
+
+.desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 20em;
 }
