@@ -176,20 +176,20 @@
         },
         {
             "id": "1",
-            "announce_name": "dev",
+            "announce_name": "RH",
             "company_id": "1",
             "candidat_id": [],
             "job_description": "dev",
-            "job_type": "fulltime",
+            "job_type": "site",
             "job_category": "finance"
         },
         {
             "id": "1",
-            "announce_name": "dev",
+            "announce_name": "IT",
             "company_id": "1",
             "candidat_id": [],
             "job_description": "dev",
-            "job_type": "fulltime",
+            "job_type": "hyber",
             "job_category": "rh"
         }
     ],
