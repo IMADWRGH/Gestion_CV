@@ -6,6 +6,8 @@ import { UpdateCompanyFormComponent } from './components/update-company-form/upd
 import { ListCompanyFormComponent } from './components/list-company-form/list-company-form.component';
 import { AddCompanyFormComponent } from './components/add-company-form/add-company-form.component';
 import { CompanyComponent } from './company.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 
 @NgModule({
@@ -13,11 +15,16 @@ import { CompanyComponent } from './company.component';
     UpdateCompanyFormComponent,
     ListCompanyFormComponent,
     AddCompanyFormComponent,
-    CompanyComponent
+    CompanyComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
-    CompanyRoutingModule
+    CompanyRoutingModule,
+    HttpClientModule
+  ],
+  exports: [
+    NavbarComponent
   ],
   bootstrap: [CompanyComponent]
 
