@@ -144,3 +144,6 @@ input[type="radio"], input[type="checkbox"]{
   border-bottom: 1px solid black; /* or any other style you want on hover */
   cursor: pointer; /* changes cursor to pointer on hover */
 }
+.is-invalid {
+  border: 1px solid red !important;
+}

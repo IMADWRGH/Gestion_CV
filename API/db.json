@@ -2,14 +2,9 @@
     "candidats": [
         {
             "id": 2,
-            "full_name": "a title",
             "profile": "Java dev",
-            "password": 100,
-            "email": "a@b.com",
-            "phone": "1234567890",
-            "address": "123 street",
+             "user_id":1,
             "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
-            "profile_picture": "D:/JobInTech-UIR/Imad ASSERNE/profile_picture/Imad.jpg",
             "save": [],
             "skills": [
                 {
@@ -156,12 +151,11 @@
         {
             "id": "1",
             "company_name": "NVM",
-            "candidat_id": "2"
+            "user_id": 1
         },
         {
             "id": "1",
-            "company_name": "UIR",
-            "candidat_id": "1"
+            "company_name": "UIR"
         }
     ],
     "Jobs": [
@@ -193,20 +187,5 @@
             "job_category": "rh"
         }
     ],
-    "users": [
-        {
-            "id": "1",
-            "username": "user1",
-            "email": "user1@gmail.com",
-            "password": "pwd",
-            "role": "condidat"
-        },
-        {
-            "id": "2",
-            "username": "user2",
-            "email": "user2@gmail.com",
-            "password": "pwd",
-            "role": "RH"
-        }
-    ]
+    "users": []
 }
