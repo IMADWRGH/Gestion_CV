@@ -1,14 +1,24 @@
-<form class="form-control form-control-lg">
+<form
+  class="m-4 p-4 form-control-lg shadow"
+  [formGroup]="form"
+  (ngSubmit)="searchJob()"
+>
   <div class="input-group m-3">
     <span class="input-group-text"><i class="bi bi-search"></i></span>
     <input
       type="text"
       class="form-control"
       placeholder="Job title, Keywords, or Company"
+      formControlName="title"
     />
     <span class="input-group-text"><i class="bi bi-geo-alt-fill"></i></span>
 
-    <input type="text" class="form-control" placeholder="City, state, ..." />
-    <button type="button" class="btn btn-primary">Search</button>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="City, state,..."
+      formControlName="city"
+    />
+    <button type="submit" class="btn btn-primary">Search</button>
   </div>
 </form>

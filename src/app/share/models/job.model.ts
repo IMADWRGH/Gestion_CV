@@ -8,4 +8,5 @@ export interface IJob {
     job_description: string,
     job_type: string,
     job_category: string,
+    location: string,
 }

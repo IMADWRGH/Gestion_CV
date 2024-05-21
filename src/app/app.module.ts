@@ -8,25 +8,23 @@ import { CandidatModule } from "./all-modules/candidat/candidat.module";
 import { CompanyModule } from "./all-modules/company/company.module";
 import { AuthModule } from "./all-modules/auth/auth.module";
 import { LandingPageComponent } from './share/landing-page/landing-page.component';
-import { HomeComponent } from './all-modules/home/home.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {HomeModule} from "./all-modules/home/home.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HomeModule } from "./all-modules/home/home.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LandingPageComponent,
-
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CandidatModule,
-    CompanyModule,
     AuthModule,
-    HomeModule
+    HomeModule,
+    CompanyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

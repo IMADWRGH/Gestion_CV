@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { IJob } from 'src/app/share/models/job.model';
 
 @Component({
   selector: 'app-home-list',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-list.component.css']
 })
 export class HomeListComponent {
+  @Input() jobs: IJob[] = [];
 
 }
