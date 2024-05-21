@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {AuthGuard} from "./core/auth/auth.guard";
 import {HomeComponent} from "./all-modules/home/home.component";
+import {LandingPageComponent} from "./share/landing-page/landing-page.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component:HomeComponent},
+  { path: 'main', component:LandingPageComponent},
   {
     path: 'auth',
     loadChildren: () =>

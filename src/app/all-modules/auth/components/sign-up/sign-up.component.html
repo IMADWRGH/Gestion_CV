@@ -19,21 +19,94 @@
 
 <section class="main-content">
   <div class="container row">
-    <form id="survey-form">
+    <form id="survey-form" [formGroup]="candidatSignupFormGroup">
+      <!--Profile form-->
       <div class="inp">
         <div class="form">
-          <label for="name" id="name-label">Name</label><br>
-          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required>
+          <label >Profile</label><br>
+          <input type="text"  class="form-control" placeholder="Enter your Name" required formControlName="profile">
         </div>
         <div class="form">
-          <label for="name" id="email-label">Email</label><br>
-          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
-        </div>
-        <div class="form">
-          <label for="number" id="number-label">University Passing Out Year <span class="bracket">(optional)</span></label><br>
-          <input type="number" name="passout" id="number" min="1990" max="2027" class="form-control" placeholder="Passout Year">
+          <label >Resume</label><br>
+          <input type="file"  class="form-control" placeholder="Enter your Resume" required formControlName="resume">
         </div>
       </div>
+      <!--Skill form-->
+      <form class="form" [formGroup]="skillsForm" (ngSubmit)="addSkill($event)">
+        <select name="bootcamp" class="form-control" formControlName="skills" (change)="addSkill($event)" required>
+          <option disabled selected value="placeholder">Select Bootcamp</option>
+          <option *ngFor="let skill of skills" [value]="skill.name">{{ skill.name }}</option>
+        </select>
+      </form>
+      <div class="form">
+        <div *ngFor="let skill of selectedSkills"
+             class="form-control mt-2"
+             [ngClass]="{ 'hovered': isHovered }"
+             (mouseover)="isHovered = true"
+             (mouseout)="isHovered = false"
+             (click)="removeSkill(skill)">
+          {{ skill.name }}
+        </div>
+      </div>
+      <!-- Company Form-->
+         <div class="form">
+                  <label >company name</label><br>
+                  <input type="text"  class="form-control" placeholder="Enter your company_name" required formControlName="company_name">
+         </div>
+        <div class="form">
+        <p>job title</p>
+        <select name="bootcamp" class="form-control" required formControlName="job_title">
+          <option disabled selected value>Select job title</option>
+          <option value="software">Software Engineering</option>
+          <option value="fullstack">Fullstack Developer</option>
+          <option value="data">Data Analyst</option>
+          <option value="cyber">Cyber Security</option>
+          <option value="ui-ux">UI-UX Development</option>
+        </select>
+      </div>
+        <div class="form">
+                  <label >start date</label><br>
+                  <input type="date"  class="form-control" placeholder="Enter your start date" required formControlName="start_date">
+        </div>
+        <div class="form">
+                  <label >end date</label><br>
+                  <input type="date"  class="form-control" placeholder="Enter your end date" required formControlName="end_date">
+        </div>
+      <!-- End Company form -->
+      <!-- Start Education form -->
+      <div class="form">
+        <label >institute name</label><br>
+        <input type="text"  class="form-control" placeholder="Enter your institute_name" required formControlName="institute_name">
+      </div>
+      <div class="form">
+        <p>degree</p>
+        <select name="bootcamp" class="form-control" required formControlName="degree">
+          <option disabled selected value>Select degree title</option>
+          <option value="master">Master</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="technician-specialist">Technician Specialist</option>
+          <option value="technician">Technician</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form">
+        <label >start date</label><br>
+        <input type="date"  class="form-control" placeholder="Enter your start date" required formControlName="start_date">
+      </div>
+      <div class="form">
+        <label >end date</label><br>
+        <input type="date"  class="form-control" placeholder="Enter your end date" required formControlName="end_date">
+      </div>
+      <div class="form">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!--
+========================== Components =======================
 
       <div class="form">
         <p>Which bootcamp were yout a part of?</p>
@@ -111,15 +184,12 @@
           <input type="checkbox" name="prefer" class="input-checkbox" value="other">Others
         </label><br>
       </div>
-
       <div class="form">
         <p>Any comments or suggestions?</p>
         <textarea name="comment" class="input-textarea" id="comments" placeholder="Enter your comments here"></textarea>
       </div>
-
       <div class="form">
         <button type="submit" id="submit" class="submit-button">Submit</button>
       </div>
-    </form>
-  </div>
-</section>
+
+-->

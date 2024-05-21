@@ -1,212 +1,390 @@
 {
-    "candidats": [
+  "candidats": [
+    {
+      "id": "2",
+      "full_name": "a title",
+      "profile": "Full stack developer",
+      "password": 100,
+      "email": "a@b.com",
+      "phone": "1234567890",
+      "address": "123 street",
+      "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
+      "profile_picture": "D:/JobInTech-UIR/Imad ASSERNE/profile_picture/Imad.jpg",
+      "save": [],
+      "skills": [
         {
-            "id": 2,
-            "full_name": "a title",
-            "profile": "Java dev",
-            "password": 100,
-            "email": "a@b.com",
-            "phone": "1234567890",
-            "address": "123 street",
-            "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
-            "profile_picture": "D:/JobInTech-UIR/Imad ASSERNE/profile_picture/Imad.jpg",
-            "save": [],
-            "skills": [
-                {
-                    "id": "1",
-                    "skill_name": "java",
-                    "level": "beginner",
-                    "candidat_id": "1"
-                },
-                {
-                    "id": "2",
-                    "skill_name": "C++",
-                    "level": "beginner",
-                    "candidat_id": "1"
-                },
-                {
-                    "id": "3",
-                    "skill_name": "C",
-                    "level": "beginner",
-                    "candidat_id": "1"
-                }
-            ],
-            "experiences": [
-                {
-                    "id": "1",
-                    "company_name": "INDATACORE",
-                    "job_title": "dev",
-                    "start_date": "2010-01-01",
-                    "end_date": "2015-01-01",
-                    "candidat_id": "1"
-                },
-                {
-                    "id": "2",
-                    "company_name": "JobInTech",
-                    "job_title": "dev",
-                    "start_date": "2010-01-01",
-                    "end_date": "2015-01-01",
-                    "candidat_id": "1"
-                },
-                {
-                    "id": "3",
-                    "company_name": "NTTDATA",
-                    "job_title": "dev",
-                    "start_date": "2010-01-01",
-                    "end_date": "2015-01-01",
-                    "candidat_id": "1"
-                }
-            ],
-            "educations": [
-                {
-                    "id": "1",
-                    "institute_name": "IIT",
-                    "degree": "Btech",
-                    "start_date": "2005-01-01",
-                    "end_date": "2009-01-01",
-                    "candidat_id": "1"
-                },
-                {
-                    "id": "2",
-                    "institute_name": "UIR",
-                    "degree": "Master",
-                    "start_date": "2005-01-01",
-                    "end_date": "2009-01-01",
-                    "candidat_id": "2"
-                }
-            ],
-            "jobs": []
+          "id": "1",
+          "name": "java",
+          "level": "beginner",
+          "candidat_id": "1"
         },
         {
-            "id": 2,
-            "full_name": "a title",
-            "password": 100,
-            "email": "a@b.com",
-            "phone": "1234567890",
-            "address": "123 street",
-            "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
-            "skills": [
-                {
-                    "id": "4",
-                    "skill_name": "C#",
-                    "level": "beginner",
-                    "candidat_id": "2"
-                },
-                {
-                    "id": "5",
-                    "skill_name": "X++",
-                    "level": "beginner",
-                    "candidat_id": "2"
-                },
-                {
-                    "id": "6",
-                    "skill_name": "PHP",
-                    "level": "beginner",
-                    "candidat_id": "2"
-                }
-            ],
-            "experience": [
-                {
-                    "id": "4",
-                    "company_name": "UIR",
-                    "job_title": "dev",
-                    "start_date": "2010-01-01",
-                    "end_date": "2015-01-01",
-                    "candidat_id": "2"
-                },
-                {
-                    "id": "5",
-                    "company_name": "SQLI",
-                    "job_title": "dev",
-                    "start_date": "2010-01-01",
-                    "end_date": "2015-01-01",
-                    "candidat_id": "2"
-                },
-                {
-                    "id": "6",
-                    "company_name": "NVM",
-                    "job_title": "dev",
-                    "start_date": "2010-01-01",
-                    "end_date": "2015-01-01",
-                    "candidat_id": "2"
-                }
-            ],
-            "educations": [
-                {
-                    "id": "1",
-                    "institute_name": "IIT",
-                    "degree": "Btech",
-                    "start_date": "2005-01-01",
-                    "end_date": "2009-01-01",
-                    "candidat_id": "1"
-                },
-                {
-                    "id": "2",
-                    "institute_name": "UIR",
-                    "degree": "Master",
-                    "start_date": "2005-01-01",
-                    "end_date": "2009-01-01",
-                    "candidat_id": "2"
-                }
-            ],
-            "jobs": []
+          "id": "2",
+          "name": "C++",
+          "level": "beginner",
+          "candidat_id": "1"
+        },
+        {
+          "id": "3",
+          "name": "C",
+          "level": "beginner",
+          "candidat_id": "1"
         }
-    ],
-    "companies": [
+      ],
+      "experiences": [
         {
-            "id": "1",
-            "company_name": "NVM",
-            "candidat_id": "2"
+          "id": "1",
+          "company_name": "INDATACORE",
+          "job_title": "dev",
+          "start_date": "2010-01-01",
+          "end_date": "2015-01-01",
+          "candidat_id": "1"
         },
         {
-            "id": "1",
-            "company_name": "UIR",
-            "candidat_id": "1"
+          "id": "2",
+          "company_name": "JobInTech",
+          "job_title": "dev",
+          "start_date": "2010-01-01",
+          "end_date": "2015-01-01",
+          "candidat_id": "1"
+        },
+        {
+          "id": "3",
+          "company_name": "NTTDATA",
+          "job_title": "dev",
+          "start_date": "2010-01-01",
+          "end_date": "2015-01-01",
+          "candidat_id": "1"
         }
-    ],
-    "Jobs": [
+      ],
+      "educations": [
         {
-            "id": "1",
-            "announce_name": "dev",
-            "company_id": "1",
-            "candidat_id": [],
-            "job_description": "dev",
-            "job_type": "fulltime",
-            "job_category": "dev"
+          "id": "1",
+          "institute_name": "IIT",
+          "degree": "Btech",
+          "start_date": "2005-01-01",
+          "end_date": "2009-01-01",
+          "candidat_id": "1"
         },
         {
-            "id": "1",
-            "announce_name": "dev",
-            "company_id": "1",
-            "candidat_id": [],
-            "job_description": "dev",
-            "job_type": "fulltime",
-            "job_category": "finance"
-        },
-        {
-            "id": "1",
-            "announce_name": "dev",
-            "company_id": "1",
-            "candidat_id": [],
-            "job_description": "dev",
-            "job_type": "fulltime",
-            "job_category": "rh"
+          "id": "2",
+          "institute_name": "UIR",
+          "degree": "Master",
+          "start_date": "2005-01-01",
+          "end_date": "2009-01-01",
+          "candidat_id": "2"
         }
-    ],
-    "users": [
+      ],
+      "jobs": []
+    },
+    {
+      "id": "2",
+      "full_name": "a title",
+      "password": 100,
+      "email": "a@b.com",
+      "phone": "1234567890",
+      "address": "123 street",
+      "resume": "D:/JobInTech-UIR/Imad ASSERNE/resume/Imad_CV.pdf",
+      "skills": [
         {
-            "id": "1",
-            "username": "user1",
-            "email": "user1@gmail.com",
-            "password": "pwd",
-            "role": "condidat"
+          "id": "4",
+          "skill_name": "C#",
+          "level": "beginner",
+          "candidat_id": "2"
         },
         {
-            "id": "2",
-            "username": "user2",
-            "email": "user2@gmail.com",
-            "password": "pwd",
-            "role": "RH"
+          "id": "5",
+          "skill_name": "X++",
+          "level": "beginner",
+          "candidat_id": "2"
+        },
+        {
+          "id": "6",
+          "skill_name": "PHP",
+          "level": "beginner",
+          "candidat_id": "2"
         }
-    ]
+      ],
+      "experience": [
+        {
+          "id": "4",
+          "company_name": "UIR",
+          "job_title": "dev",
+          "start_date": "2010-01-01",
+          "end_date": "2015-01-01",
+          "candidat_id": "2"
+        },
+        {
+          "id": "5",
+          "company_name": "SQLI",
+          "job_title": "dev",
+          "start_date": "2010-01-01",
+          "end_date": "2015-01-01",
+          "candidat_id": "2"
+        },
+        {
+          "id": "6",
+          "company_name": "NVM",
+          "job_title": "dev",
+          "start_date": "2010-01-01",
+          "end_date": "2015-01-01",
+          "candidat_id": "2"
+        }
+      ],
+      "educations": [
+        {
+          "id": "1",
+          "institute_name": "IIT",
+          "degree": "Btech",
+          "start_date": "2005-01-01",
+          "end_date": "2009-01-01",
+          "candidat_id": "1"
+        },
+        {
+          "id": "2",
+          "institute_name": "UIR",
+          "degree": "Master",
+          "start_date": "2005-01-01",
+          "end_date": "2009-01-01",
+          "candidat_id": "2"
+        }
+      ],
+      "jobs": []
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "company_name": "NVM",
+      "candidat_id": "2"
+    },
+    {
+      "id": "1",
+      "company_name": "UIR",
+      "candidat_id": "1"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "name": "java",
+      "level": "beginner",
+      "candidat_id": "1"
+    },
+    {
+      "id": "2",
+      "name": "C++",
+      "level": "beginner",
+      "candidat_id": "1"
+    },
+    {
+      "id": "3",
+      "name": "C",
+      "level": "beginner",
+      "candidat_id": "1"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "1",
+      "announce_name": "dev",
+      "company_id": "1",
+      "candidat_id": [],
+      "job_description": "dev",
+      "job_type": "fulltime",
+      "job_category": "dev"
+    },
+    {
+      "id": "1",
+      "announce_name": "dev",
+      "company_id": "1",
+      "candidat_id": [],
+      "job_description": "dev",
+      "job_type": "fulltime",
+      "job_category": "finance"
+    },
+    {
+      "id": "1",
+      "announce_name": "dev",
+      "company_id": "1",
+      "candidat_id": [],
+      "job_description": "dev",
+      "job_type": "fulltime",
+      "job_category": "rh"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "1",
+      "company_name": "INDATACORE",
+      "job_title": "dev",
+      "start_date": "2010-01-01",
+      "end_date": "2015-01-01",
+      "candidat_id": "1"
+    },
+    {
+      "id": "2",
+      "company_name": "JobInTech",
+      "job_title": "dev",
+      "start_date": "2010-01-01",
+      "end_date": "2015-01-01",
+      "candidat_id": "1"
+    },
+    {
+      "id": "3",
+      "company_name": "NTTDATA",
+      "job_title": "dev",
+      "start_date": "2010-01-01",
+      "end_date": "2015-01-01",
+      "candidat_id": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "265f",
+      "full_name": "Brahim  EL BANAJI",
+      "email": "elbanaji.brahim@gmail.com",
+      "password": "bncasa",
+      "password_confirmation": "bncasa",
+      "phone": "0708193468",
+      "address": "khalid benacer",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "d3cb",
+      "full_name": "Brahim  EL BANAJI",
+      "email": "elbanaji.brahim@gmail.com",
+      "password": "bncasa",
+      "phone": "0708193468",
+      "address": "khalid benacer",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "e3e1",
+      "full_name": "Brahim  EL BANAJI",
+      "email": "elbanaji.brahim@gmail.com",
+      "password": "bnbn",
+      "phone": "0708193468",
+      "address": "khalid benacer",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "0928",
+      "full_name": "Rogan Mccoy",
+      "email": "bexyb@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Magni perferendis de",
+      "address": "Ut qui quo vitae eni",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "68f5",
+      "full_name": "Darius Valentine",
+      "email": "kahusoj@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Quibusdam praesentiu",
+      "address": "Fuga Assumenda est",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "ccc2",
+      "full_name": "Basia Clayton",
+      "email": "zote@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Tempore quam tempor",
+      "address": "Sit corporis enim d",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "dee7",
+      "full_name": "Yoshi Heath",
+      "email": "humat@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Error vero sit in la",
+      "address": "Dolor magnam omnis s",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "a093",
+      "full_name": "Odessa English",
+      "email": "rewiqet@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Sint dolores ut cill",
+      "address": "Sed deserunt est ve",
+      "role": "COMPANY_ROLE"
+    },
+    {
+      "id": "fe35",
+      "full_name": "Jocelyn Mcleod",
+      "email": "kurufezi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Rem magni voluptate ",
+      "address": "Ullamco consequuntur",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "2046",
+      "full_name": "Gay Tillman",
+      "email": "doxuh@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Maiores maiores dolo",
+      "address": "Quam aut ratione sed",
+      "role": "COMPANY_ROLE"
+    },
+    {
+      "id": "7921",
+      "full_name": "Hedwig Turner",
+      "email": "pytuka@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Eius impedit illo d",
+      "address": "Reprehenderit cum co",
+      "role": "COMPANY_ROLE"
+    },
+    {
+      "id": "4015",
+      "full_name": "TaShya Strong",
+      "email": "roge@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Veniam dicta non et",
+      "address": "Reiciendis anim repe",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "a17c",
+      "full_name": "Elliott Weeks",
+      "email": "hewysopo@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Ex ut facere non et ",
+      "address": "Dolor ut ullam place",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "f5eb",
+      "full_name": "Arthur Macias",
+      "email": "kezuxiko@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Pariatur Omnis repr",
+      "address": "Ullamco sit et deser",
+      "role": "COMPANY_ROLE"
+    },
+    {
+      "id": "db88",
+      "full_name": "Shaeleigh Perry",
+      "email": "wihutirumo@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Laboris consequatur",
+      "address": "Aut unde et architec",
+      "role": "CONDIDATE_ROLE"
+    },
+    {
+      "id": "67a8",
+      "full_name": "Amy Franco",
+      "email": "hupyroxi@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "Mollitia autem aliqu",
+      "address": "Molestiae saepe dese",
+      "role": "CONDIDATE_ROLE"
+    }
+  ],
+  "saves": []
 }
