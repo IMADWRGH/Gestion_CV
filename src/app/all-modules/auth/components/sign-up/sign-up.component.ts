@@ -41,7 +41,6 @@ export class SignUpComponent {
   candidatSignupFormGroup = new FormGroup({
     profile: new FormControl('', [Validators.required, Validators.minLength(6)]),
     resume: new FormControl(null,[]),
-    save: new FormControl('', []),
     skills: new FormControl([], []),
     educations: this.educationFormGroup,
     experiences: this.experiencesFormGroup,
@@ -87,7 +86,6 @@ export class SignUpComponent {
   addSkill(event: Event) {
     const selectedValue = (event.target as HTMLSelectElement).value;
     const selectedSkill = this.skills.find(skill => skill.name === selectedValue);
-
     if (selectedSkill && !this.selectedSkills.includes(selectedSkill)) {
       this.selectedSkills.push(selectedSkill);
     }
