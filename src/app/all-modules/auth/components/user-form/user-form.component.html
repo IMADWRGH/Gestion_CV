@@ -1,0 +1,67 @@
+<p>user-form works!</p>
+
+<div class="header">
+  <div class="container">
+    <a href="#" class="logo">
+      <p>Grow<span class="pink">Your</span>Skill</p>
+    </a>
+  </div>
+</div>
+
+<header class="head">
+  <div class="contain">
+    <h1 id="title"><span class="purple">Grow<span class="pink">Your</span>Skill</span> Bootcamp Survey Form</h1>
+    <p id="description">Thank you for taking part in our bootcamp!<br>Help us know how we can improve our platform.</p>
+    <div class="image">
+      <img src="https://preview.colorlib.com/theme/bootstrap/signup-form-07/images/undraw_remotely_2j6y.svg"
+           alt="student">
+    </div>
+  </div>
+</header>
+
+<section class="main-content">
+  <div class="container row">
+    <form id="survey-form" [formGroup]="userSignupFormGroup" (ngSubmit)="saveUser()">
+      <div class="inp">
+        <div class="form">
+          <label>Full Name</label><br>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your Name" required
+                 formControlName="full_name">
+        </div>
+        <div class="form">
+          <label>Email</label><br>
+          <input type="email" class="form-control" placeholder="Enter your email" required formControlName="email">
+        </div>
+        <div class="form">
+          <label>Password</label><br>
+          <input type="password" class="form-control" placeholder="Enter your password" required
+                 formControlName="password">
+        </div>
+        <div class="form">
+          <label for="name" id="password-confirmation">Password Confirmation</label><br>
+          <input type="password" name="email" id="email" class="form-control" placeholder="Enter your email"
+                 [(ngModel)]="password_confirmation" [ngModelOptions]="{ standalone: true }">
+        </div>
+        <div class="form">
+          <label>Phone Number</label><br>
+          <input type="text" class="form-control" placeholder="Enter your Phone Number" required
+                 formControlName="phone">
+        </div>
+        <div class="form">
+          <label>Address</label><br>
+          <input type="text" class="form-control" placeholder="Enter your address" required formControlName="address">
+        </div>
+        <div class="form">
+          <select name="bootcamp" id="dropdown" class="form-control" required formControlName="role">
+            <option disabled selected value>Select Role</option>
+            <option value="CONDIDATE_ROLE">Candidate</option>
+            <option value="COMPANY_ROLE">Company</option>
+          </select>
+        </div>
+      </div>
+      <div class="form">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>

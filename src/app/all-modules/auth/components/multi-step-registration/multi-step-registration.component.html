@@ -1,0 +1,215 @@
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+      <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+        <h2 id="heading">Sign Up Your User Account</h2>
+        <p>Fill all form field to go to next step</p>
+        <form id="msform">
+          <!-- progressbar -->
+          <ul id="progressbar">
+            <li *ngFor="let step of steps; let i = index"
+                [class.active]="i === currentStep"
+                (click)="setActiveStep(i)">
+              <strong>{{ step }}</strong>
+            </li>
+          </ul>
+
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0"
+                 aria-valuemax="100"></div>
+          </div>
+          <br> <!-- fieldsets -->
+          <fieldset *ngIf="currentStep === 0">
+            <form [formGroup]="userSignupFormGroup">
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Account Information:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 1 - 4</h2>
+                  </div>
+                </div>
+                <label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email Id"
+                                                                   formControlName="email"/>
+                <div
+                  *ngIf="userSignupFormGroup.get('email')?.invalid && (userSignupFormGroup.get('email')?.dirty || userSignupFormGroup.get('email')?.touched)">
+                  <div *ngIf="userSignupFormGroup.get('email')?.errors?.['required'] ">Email is required.</div>
+                </div>
+                <label class="fieldlabels">Username: *</label> <input type="text" name="username" placeholder="UserName"
+                                                                      formControlName="username"/>
+                <div
+                  *ngIf="userSignupFormGroup.get('username')?.invalid && (userSignupFormGroup.get('username')?.dirty || userSignupFormGroup.get('username')?.touched)">
+                  <div *ngIf="userSignupFormGroup.get('username')?.errors?.['required']">Email is required.</div>
+                </div>
+                <label class="fieldlabels">Password: *</label> <input type="password" name="pwd" placeholder="Password"
+                                                                      formControlName="password"/>
+                <label class="fieldlabels">Confirm Password: *</label> <input type="password" name="cpwd"
+                                                                              placeholder="Confirm Password"
+                                                                              [(ngModel)]="password_confirmation"
+                                                                              [ngModelOptions]="{ standalone: true }"/>
+                <label class="fieldlabels">Phone Number: *</label> <input type="text" name="phone"
+                                                                          placeholder="Phone Number"
+                                                                          formControlName="phone"/>
+                <label class="fieldlabels">Address: *</label> <input type="text" name="adress" placeholder="Adress"
+                                                                     formControlName="address"/>
+                <div class="form">
+                  <select name="bootcamp" id="dropdown" class="form-control" required formControlName="role">
+                    <option disabled selected value>Select Role</option>
+                    <option value="CONDIDATE_ROLE">Candidate</option>
+                    <option value="COMPANY_ROLE">Company</option>
+                  </select>
+                </div>
+              </div>
+              <input type="button" name="next" class="next action-button" value="Next" (click)="next()"/>
+            </form>
+          </fieldset>
+
+          <!--
+          Condidat Form
+          -->
+
+
+          <fieldset *ngIf="currentStep === 1">
+            <form [formGroup]="candidatSignupFormGroup">
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Profile Information:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 2 - 4</h2>
+                  </div>
+                </div>
+                <label class="fieldlabels">Profile: *</label>
+                <input type="text" name="fname"
+                       placeholder="Profile joobs: full stack | backend ..." formControlName="profile"/>
+                <div
+                  *ngIf="candidatSignupFormGroup.get('profile')?.invalid && (candidatSignupFormGroup.get('profile')?.dirty || candidatSignupFormGroup.get('profile')?.touched)">
+                  <div *ngIf="candidatSignupFormGroup.get('profile')?.errors?.['required']">profile is required.</div>
+                </div>
+
+                <label
+                  class="fieldlabels">Resume: *</label>
+                <input type="file" name="resume" placeholder="resume **" formControlName="resume"/>
+                <label
+                  class="fieldlabels">Skills.: *</label>
+                <!--Skill form-->
+                <form class="form" (ngSubmit)="addSkill($event)">
+                  <select name="bootcamp" class="form-control" formControlName="skills" (change)="addSkill($event)"
+                          required>
+                    <option disabled selected value="placeholder">Select Bootcamp</option>
+                    <option *ngFor="let skill of skills" [value]="skill.name">{{ skill.name }}</option>
+                  </select>
+                </form>
+                <div class="form">
+                  <div *ngFor="let skill of selectedSkills"
+                       class="form-control mt-2"
+                       [ngClass]="{ 'hovered': isHovered }"
+                       (mouseover)="isHovered = true"
+                       (mouseout)="isHovered = false"
+                       (click)="removeSkill(skill)">
+                    {{ skill.name }}
+                  </div>
+                </div>
+              </div>
+              <input type="button" name="next" class="next action-button" value="Next" (click)="next()"/> <input
+              type="button" name="previous" class="previous action-button-previous" value="Previous"
+              (click)="previous()"/>
+            </form>
+          </fieldset>
+          <fieldset *ngIf="currentStep === 2">
+            <form [formGroup]="experienceSignupFormGroup">
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Experience:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 3 - 4</h2>
+                  </div>
+                </div>
+                <label class="fieldlabels">Company Name *:</label>
+                <input type="text" name="company_name" placeholder="Company Name " formControlName="company_name">
+                <label class="fieldlabels">Job Title:</label>
+                <select name="bootcamp" class="form-control" required formControlName="job_title">
+                  <option disabled selected value>Select job title</option>
+                  <option value="software">Software Engineering</option>
+                  <option value="fullstack">Fullstack Developer</option>
+                  <option value="data">Data Analyst</option>
+                  <option value="cyber">Cyber Security</option>
+                  <option value="ui-ux">UI-UX Development</option>
+                </select>
+                <label class="fieldlabels">Start Date *:</label>
+                <input type="date" name="start_date" placeholder="start_date" formControlName="start_date">
+                <label class="fieldlabels">End Date *:</label>
+                <input type="date" name="end_date" placeholder="Company Name " formControlName="end_date">
+
+                <input type="button" name="next" class="next action-button" value="Submit" (click)="next()"/> <input
+                type="button" name="previous" class="previous action-button-previous" value="Previous"
+                (click)="previous()"/>
+              </div>
+            </form>
+          </fieldset>
+          <fieldset *ngIf="currentStep === 3">
+            <form [formGroup]="educationSignupFormGroup">
+              <div class="form-card">
+                <div class="row">
+                  <div class="col-7">
+                    <h2 class="fs-title">Education:</h2>
+                  </div>
+                  <div class="col-5">
+                    <h2 class="steps">Step 3 - 4</h2>
+                  </div>
+                </div>
+                <label class="fieldlabels">Institute Name *:</label>
+                <input type="text" name="institute_name" placeholder="Company Name " formControlName="institute_name">
+                <label class="fieldlabels">Degree Title:</label>
+                <select name="bootcamp" class="form-control" required formControlName="degree">
+                  <option disabled selected value>Select degree title</option>
+                  <option value="master">Master</option>
+                  <option value="bachelor">Bachelor's Degree</option>
+                  <option value="technician-specialist">Technician Specialist</option>
+                  <option value="technician">Technician</option>
+                  <option value="other">Other</option>
+                </select>
+                <label class="fieldlabels">Start Date *:</label>
+                <input type="date" name="start_date" placeholder="start_date" formControlName="start_date">
+                <label class="fieldlabels">End Date *:</label>
+                <input type="date" name="end_date" placeholder="Company Name " formControlName="end_date">
+                <input type="button" name="next" class="next action-button" value="Submit" (click)="next()"/> <input
+                type="button" name="previous" class="previous action-button-previous" value="Previous"
+                (click)="previous()"/>
+              </div>
+            </form>
+          </fieldset>
+          <fieldset *ngIf="currentStep === 4">
+            <div class="form-card">
+              <div class="row">
+                <div class="col-7">
+                  <h2 class="fs-title">Finish:</h2>
+                </div>
+                <div class="col-5">
+                  <h2 class="steps">Step 4 - 4</h2>
+                </div>
+              </div>
+              <br><br>
+              <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+              <div class="row justify-content-center">
+                <div class="col-3"><img src="https://i.imgur.com/GwStPmg.png" class="fit-image"></div>
+              </div>
+              <br><br>
+              <div class="row justify-content-center">
+                <div class="col-7 text-center">
+                  <button type="submit" id="submit" class="submit-button" (click)="next()">
+                  <h5 class="purple-text text-center">You Have Successfully Signed Up Go To your Profile Page</h5>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,195 @@
+
+<div class="header">
+  <div class="container">
+    <a href="#" class="logo">
+      <p>Grow<span class="pink">Your</span>Skill</p>
+    </a>
+  </div>
+</div>
+
+<header class="head">
+  <div class="contain">
+    <h1 id="title"><span class="purple">Grow<span class="pink">Your</span>Skill</span> Bootcamp Survey Form</h1>
+    <p id="description">Thank you for taking part in our bootcamp!<br>Help us know how we can improve our platform.</p>
+    <div class="image">
+      <img src="https://preview.colorlib.com/theme/bootstrap/signup-form-07/images/undraw_remotely_2j6y.svg" alt="student">
+    </div>
+  </div>
+</header>
+
+<section class="main-content">
+  <div class="container row">
+    <form id="survey-form" [formGroup]="candidatSignupFormGroup">
+      <!--Profile form-->
+      <div class="inp">
+        <div class="form">
+          <label >Profile</label><br>
+          <input type="text"  class="form-control" placeholder="Enter your Name" required formControlName="profile">
+        </div>
+        <div class="form">
+          <label >Resume</label><br>
+          <input type="file"  class="form-control" placeholder="Enter your Resume" required formControlName="resume">
+        </div>
+      </div>
+      <!--Skill form-->
+      <form class="form" [formGroup]="skillsForm" (ngSubmit)="addSkill($event)">
+        <select name="bootcamp" class="form-control" formControlName="skills" (change)="addSkill($event)" required>
+          <option disabled selected value="placeholder">Select Bootcamp</option>
+          <option *ngFor="let skill of skills" [value]="skill.name">{{ skill.name }}</option>
+        </select>
+      </form>
+      <div class="form">
+        <div *ngFor="let skill of selectedSkills"
+             class="form-control mt-2"
+             [ngClass]="{ 'hovered': isHovered }"
+             (mouseover)="isHovered = true"
+             (mouseout)="isHovered = false"
+             (click)="removeSkill(skill)">
+          {{ skill.name }}
+        </div>
+      </div>
+      <!-- Company Form-->
+         <div class="form">
+                  <label >company name</label><br>
+                  <input type="text"  class="form-control" placeholder="Enter your company_name" required formControlName="company_name">
+         </div>
+        <div class="form">
+        <p>job title</p>
+        <select name="bootcamp" class="form-control" required formControlName="job_title">
+          <option disabled selected value>Select job title</option>
+          <option value="software">Software Engineering</option>
+          <option value="fullstack">Fullstack Developer</option>
+          <option value="data">Data Analyst</option>
+          <option value="cyber">Cyber Security</option>
+          <option value="ui-ux">UI-UX Development</option>
+        </select>
+      </div>
+        <div class="form">
+                  <label >start date</label><br>
+                  <input type="date"  class="form-control" placeholder="Enter your start date" required formControlName="start_date">
+        </div>
+        <div class="form">
+                  <label >end date</label><br>
+                  <input type="date"  class="form-control" placeholder="Enter your end date" required formControlName="end_date">
+        </div>
+      <!-- End Company form -->
+      <!-- Start Education form -->
+      <div class="form">
+        <label >institute name</label><br>
+        <input type="text"  class="form-control" placeholder="Enter your institute_name" required formControlName="institute_name">
+      </div>
+      <div class="form">
+        <p>degree</p>
+        <select name="bootcamp" class="form-control" required formControlName="degree">
+          <option disabled selected value>Select degree title</option>
+          <option value="master">Master</option>
+          <option value="bachelor">Bachelor's Degree</option>
+          <option value="technician-specialist">Technician Specialist</option>
+          <option value="technician">Technician</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form">
+        <label >start date</label><br>
+        <input type="date"  class="form-control" placeholder="Enter your start date" required formControlName="start_date">
+      </div>
+      <div class="form">
+        <label >end date</label><br>
+        <input type="date"  class="form-control" placeholder="Enter your end date" required formControlName="end_date">
+      </div>
+      <div class="form">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<!--
+========================== Components =======================
+
+      <div class="form">
+        <p>Which bootcamp were yout a part of?</p>
+        <select name="bootcamp" id="dropdown" class="form-control" required>
+          <option disabled selected value>Select Bootcamp</option>
+          <option value="front">Front-End Bootcamp</option>
+          <option value="fullstack">Fullstack Bootcamp</option>
+          <option value="python">Python Bootcamp</option>
+          <option value="cpp">C++</option>
+          <option value="ui-ux">UI-UX Development</option>
+        </select>
+      </div>
+
+      <div class="form drop">
+        <p>Would you recommend the GrowYourSkill bootcamp to a friend?</p>
+        <label>
+          <label>
+            <input type="radio" name="user-recommend" value="definitely" class="input-radio" checked>Definitely
+          </label><br>
+          <label>
+            <input type="radio" name="user-recommend" class="input-radio" value="maybe">Maybe
+          </label><br>
+          <label>
+            <input type="radio" name="user-recommend" class="input-radio" value="not-sure">Not sure
+          </label><br>
+          <label>
+            <input type="radio" name="user-recommend" class="input-radio" value="not-sure">No
+          </label><br>
+        </label>
+      </div>
+
+      <div class="form">
+        <p>What would you like us to improve?</p>
+        <select name="improve" id="improve" class="form-control" required>
+          <option disabled selected value>Select option</option><br>
+          <option value="projects">Projects</option>
+          <option value="videos">Videos</option>
+          <option value="resources">Resources</option>
+          <option value="challenges">Challenges</option>
+          <option value="open-source">Open-Source communtiy</option>
+          <option value="discord">Discord Meetups</option>
+          <option value="help-rooms">Help Rooms</option>
+          <option value="forum">Forums</option>
+          <option value="other">Others</option>
+        </select>
+      </div>
+
+      <div class="form drop">
+        <p>Which was your favourite part of the bootcamp?<span class="bracket">(Check all that apply)</span></p>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="projects">Projects
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="videos">Videos
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="resources">Resources
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="challenges">Challenges
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="open-source">Open-Source Community
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="discord">Discord Meetups
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="help-rooms">Help Rooms
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="forum">Forum
+        </label><br>
+        <label>
+          <input type="checkbox" name="prefer" class="input-checkbox" value="other">Others
+        </label><br>
+      </div>
+      <div class="form">
+        <p>Any comments or suggestions?</p>
+        <textarea name="comment" class="input-textarea" id="comments" placeholder="Enter your comments here"></textarea>
+      </div>
+      <div class="form">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+
+-->

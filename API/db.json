@@ -1,0 +1,137 @@
+{
+  "candidats": [
+    {
+      "id": "4671",
+      "user": {
+        "id": "e9de",
+        "username": "hiryvemedi",
+        "email": "wylora@mailinator.com",
+        "password": "Pa$$w0rd!",
+        "phone": "+1 (236) 459-2409",
+        "address": "Totam non quibusdam ",
+        "role": "CONDIDATE_ROLE"
+      },
+      "profile": "Maxwell Moss",
+      "resume": "C:\\fakepath\\Brahim EL BANAJI- CV in progress ....pdf",
+      "skills": [
+        {
+          "id": "1",
+          "name": "JAVA"
+        },
+        {
+          "id": "2",
+          "name": "JavaScript"
+        },
+        {
+          "id": "1",
+          "name": "Angular"
+        }
+      ],
+      "education": [
+        {
+          "id": "517a",
+          "institute_name": "Quintessa Ware",
+          "degree": "bachelor",
+          "start_date": "2013-02-03",
+          "end_date": "2014-11-13",
+          "candidat_id": ""
+        }
+      ],
+      "experiences": [
+        {
+          "id": "feb9",
+          "company_name": "Peters and Mathis Plc",
+          "job_title": "software",
+          "start_date": "2022-02-08",
+          "end_date": "2004-12-19",
+          "candidat_id": ""
+        }
+      ]
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "company_name": "NVM",
+      "user_id": 1
+    },
+    {
+      "id": "1",
+      "company_name": "UIR"
+    }
+  ],
+  "Jobs": [
+    {
+      "id": "1",
+      "announce_name": "dev",
+      "company_id": "1",
+      "candidat_id": [],
+      "job_description": "dev",
+      "job_type": "fulltime",
+      "job_category": "dev"
+    },
+    {
+      "id": "1",
+      "announce_name": "dev",
+      "company_id": "1",
+      "candidat_id": [],
+      "job_description": "dev",
+      "job_type": "fulltime",
+      "job_category": "finance"
+    },
+    {
+      "id": "1",
+      "announce_name": "dev",
+      "company_id": "1",
+      "candidat_id": [],
+      "job_description": "dev",
+      "job_type": "fulltime",
+      "job_category": "rh"
+    }
+  ],
+  "users": [
+    {
+      "id": "e9de",
+      "username": "hiryvemedi",
+      "email": "wylora@mailinator.com",
+      "password": "Pa$$w0rd!",
+      "phone": "+1 (236) 459-2409",
+      "address": "Totam non quibusdam ",
+      "role": "CONDIDATE_ROLE"
+    }
+  ],
+  "skills": [
+    {
+      "id": "1",
+      "name": "JAVA"
+    },
+    {
+      "id": "2",
+      "name": "JavaScript"
+    },
+    {
+      "id": "1",
+      "name": "Angular"
+    }
+  ],
+  "educations": [
+    {
+      "id": "517a",
+      "institute_name": "Quintessa Ware",
+      "degree": "bachelor",
+      "start_date": "2013-02-03",
+      "end_date": "2014-11-13",
+      "candidat_id": ""
+    }
+  ],
+  "experiences": [
+    {
+      "id": "feb9",
+      "company_name": "Peters and Mathis Plc",
+      "job_title": "software",
+      "start_date": "2022-02-08",
+      "end_date": "2004-12-19",
+      "candidat_id": ""
+    }
+  ]
+}
